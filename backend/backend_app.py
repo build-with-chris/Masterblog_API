@@ -87,6 +87,7 @@ def get_posts():
             pass
     return jsonify(paginated_posts)
 
+
 @app.route('/api/posts/<int:id>', methods=['DELETE'])
 def delete_post(id):
     POSTS = load_posts()
